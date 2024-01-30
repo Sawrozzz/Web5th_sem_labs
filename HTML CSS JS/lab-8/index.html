@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      header {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 10px;
+      }
+      main {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 20px;
+      }
+      section {
+        flex: 1;
+        margin: 10px;
+        padding: 20px;
+        border: 1px solid #ddd;
+        box-sizing: border-box;
+      }
+      sidebar {
+        flex: 0 0 30%;
+        margin: 10px;
+        padding: 20px;
+        border: 1px solid #ddd;
+        box-sizing: border-box;
+      }
+      @media (max-width: 768px) {
+        main {
+          flex-direction: column;
+        }
+        section,
+        sidebar {
+          flex: 1 1 auto;
+        }
+      }
+      @media (max-width: 480px) {
+        header {
+          font-size: 18px;
+        }
+        section,
+        sidebar {
+          margin: 5px;
+        }
+      }
+    </style>
+    <title>Responsive Web Page</title>
+  </head>
+  <body>
+    <header>
+      <h1>Responsive Web Page</h1>
+    </header>
+    <main>
+      <section>
+        <h2>Content Section 1</h2>
+        <p>This is the main content section.</p>
+      </section>
+      <section>
+        <h2>Content Section 2</h2>
+        <p>This is another content section.</p>
+      </section>
+      <sidebar>
+        <h2>Sidebar</h2>
+        <p>This is the sidebar.</p>
+      </sidebar>
+    </main>
+  </body>
+</html>
