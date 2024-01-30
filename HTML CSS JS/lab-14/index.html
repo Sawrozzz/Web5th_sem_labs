@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jQuery Example</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  </head>
+  <body>
+    <h2>jQuery DOM Manipulation Example</h2>
+    <p id="demo">Hello, This is Saroj</p>
+    <button id="changeText">Change Text</button>
+    <button id="hideText">Hide Text</button>
+    <button id="showText">Show Text</button>
+    <script>
+      $(document).ready(function () {
+        $("#changeText").click(function () {
+          $("#demo").text("I study at ASCOL in 5th semester ");
+        });
+        $("#hideText").click(function () {
+          $("#demo").hide();
+        });
+        $("#showText").click(function () {
+          $("#demo").show();
+        });
+      });
+    </script>
+  </body>
+</html>
