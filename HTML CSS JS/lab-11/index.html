@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cookie Example</title>
+  </head>
+  <body>
+    <h2>Cookie Example</h2>
+    <button onclick="setCookie()">Set Cookie</button>
+    <button onclick="getCookie()">Get Cookie</button>
+    <script>
+      function setCookie() {
+        document.cookie =
+          "example=Hello, Cookies!; expires=Thu, 01 Jan 2030 00:00:00 UTC; path=/";
+        alert("Cookie set!");
+      }
+
+      function getCookie() {
+        var cookieValue = document.cookie.replace(
+          /(?:(?:^|.*;\s*)example\s*=\s*([^;]*).*$)|^.*$/,
+          "$1"
+        );
+        if (cookieValue) {
+          alert("Cookie value: " + cookieValue);
+        } else {
+          alert("Cookie not set.");
+        }
+      }
+    </script>
+  </body>
+</html>
