@@ -1,0 +1,10 @@
+/* styles.css */
+h1 {
+    color: red;
+    text-align: center;
+}
+
+p {
+    font-size: 22px;
+    line-height: 1.7;
+}
