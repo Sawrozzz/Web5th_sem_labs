@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      .sticky-container {
+        height: 400px;
+        overflow: auto;
+      }
+      .sticky-box {
+        position: sticky;
+        top: 20px;
+        background-color: lightblue;
+        padding: 10px;
+        margin-bottom: 20px;
+      }
+      .content {
+        height: 800px; /* To enable scrolling */
+      }
+    </style>
+    <title>Sticky Positioning</title>
+  </head>
+  <body>
+    <div class="sticky-container">
+      <div class="sticky-box">Sticky Positioning</div>
+      <div class="content">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit
+      </div>
+    </div>
+  </body>
+</html>
